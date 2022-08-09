@@ -1,0 +1,16 @@
+[package]
+name = "f-stats"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+panic = "abort"
+strip = true
+#debug = true
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bytesize = "1"
+walkdir = "2"
+indicatif = "0.17"
